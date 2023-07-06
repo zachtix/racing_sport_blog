@@ -15,28 +15,72 @@
   font-family: sans-serif;
   transition: 0.5s;
 }
-
 .topBar {
+  width: 100%;
+  background-color: var(--bark);
+}
+.warpper {
   display: flex;
   justify-content: space-between;
-  max-width: 1100px;
+  max-width: 1440px;
   margin: auto;
-  padding: 5px 20px;
-  background-color: black;
-  /* border: 1px solid red; */
+  background-color: white;
+
 }
 
-.topBar a {
-  font-size: 10px;
-  color: white;
-  margin-right: 10px;
+.topBarLeft h1 {
+  font-size: 16px;
+  color: black;
+  padding: 10px 0;
   text-transform: uppercase;
 }
 
-.topBar a:hover {
-  color: var(--gray-light);
+.topBarRight {
+  display: flex;
 }
 
-.topBar a i {
-  font-size: 24px;
+.topBarRight .start {
+  color: black;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+.topBarRight .center {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--blue-light);
+  padding: 10px 20px;
+}
+
+.topBarRight .center a {
+  padding: 7px;
+  margin: 2px;
+  border-radius: 50%;
+  color: white;
+}
+
+.topBarRight .center a:hover {
+  background-color: var(--gray-light);
+}
+
+.topBarRight .end {
+  display: flex;
+  padding: 10px 15px;
+  font-size: 14px;
+  background-color: var(--blue-dark);
+  color: white;
+}
+
+.topBarRight .end i {
+  font-size: 18px;
+  background-color: var(--gray-light);
+  border-radius: 50%;
+  padding: auto;
+  padding-top: 4px;
+  padding-left: 6px;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border: 1px solid white;
 }
