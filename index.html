@@ -10,7 +10,8 @@
     crossorigin="anonymous" 
     referrerpolicy="no-referrer" 
   />
-  <title>Document</title>
+  <link rel="icon" type="image/x-icon" href="/assets/Logo.ico">
+  <title>Racing Blog</title>
 </head>
 <body>
   <header class="header">
@@ -76,19 +77,70 @@
       </div>
     </div>
   </nav>
-  <div class="none__Board"></div>
+  <main class="content">
+    <div class="warpper__grid">
+      <div class="content-grid__main">
+        <div class="top-news">
+          <div class="card">
+            <img src="https://cdn.racingnews365.com/2023/Russell/_1125x633_crop_center-center_85_none/9686051/XPB_1202996_HiRes.webp?v=1683882624" alt="Russell">
+            <div class="card__content">
+              <p class="card__tag">
+              George Russell
+              </p>
+              <h1 class="card__title">
+                Russell proposes protester meeting over 'reckless' threats
+              </h1>					
+              <div class="card__footer">
+                <i class="fa-regular fa-clock"></i>
+                <span>Today, 13:40</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://cdn.racingnews365.com/2023/Russell/_1125x633_crop_center-center_85_none/9686051/XPB_1202996_HiRes.webp?v=1683882624" alt="Russell">
+            <div class="card__content">
+              <p class="card__tag">
+              George Russell
+              </p>
+              <h1 class="card__title">
+                Russell proposes protester meeting over 'reckless' threats
+              </h1>					
+              <div class="card__footer">
+                <i class="fa-regular fa-clock"></i>
+                <span>Today, 13:40</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://cdn.racingnews365.com/2023/Russell/_1125x633_crop_center-center_85_none/9686051/XPB_1202996_HiRes.webp?v=1683882624" alt="Russell">
+            <div class="card__content">
+              <p class="card__tag">
+              George Russell
+              </p>
+              <h1 class="card__title">
+                Russell proposes protester meeting over 'reckless' threats
+              </h1>					
+              <div class="card__footer">
+                <i class="fa-regular fa-clock"></i>
+                <span>Today, 13:40</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-grid__side">
+        <h1>dfsd</h1>
+      </div>
+    </div>
+  </main>
 
+  <div class="none__Board"></div>
   <script>
     let navbar = document.querySelector("body > nav > div > div.nav__left > ul > li:nth-child(1) > a")
-
     window.onscroll = function() {
-
-      // pageYOffset or scrollY
       if (window.pageYOffset > 0) {
-        // navbar.classList.add('scrolled')
         navbar.innerHTML = `<img src="/assets/Logo.png" alt="Logo Racing Blog">`;
       } else {
-        // navbar.classList.remove('scrolled')
         navbar.innerHTML = `<i class="fa-solid fa-house"></i>`;
       }
     }
