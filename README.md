@@ -3,7 +3,9 @@
 Clone racingnews365
 
 ## Responsive
-Desktop Device
+- [x] Desktop Device
+- [] Tablet Device
+- [] Mobile Device
 
 ## Preview
 
