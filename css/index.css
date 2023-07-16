@@ -185,11 +185,14 @@ main .content {
   max-width: 1100px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 300px;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  /* border: 1px solid red; */
 }
 
 .content-grid__main {
   /* border: 1px solid red; */
+  width: 100%;
 }
 
 .content-grid__main .top-news {
@@ -219,10 +222,6 @@ main .content {
   position: absolute;
   left: 1rem;
   bottom: 1rem;
-}
-
-.content-grid__side {
-  /* border: 1px solid red; */
 }
 
 .top-news .card:hover img {
@@ -489,4 +488,199 @@ main .content {
 .footer-content-video .more-videos:hover {
   background-color: rgba(12, 12, 15, 0.5);
   cursor: pointer;
+}
+
+.content-grid__side {
+  /* border: 1px solid red; */
+  width: 100%;
+}
+
+.content-grid__side .latest-news .title, .f1-standings .title, .f1-calendar .title {
+  background-color: #dc0e0e;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.4rem;
+  padding: 0.7rem;
+  font-style: italic;
+  letter-spacing: 0.1rem;
+}
+
+.content-grid__side .latest-news {
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-top: 0;
+}
+
+.latest-news .list-news .card-news {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  padding: 0.5rem;
+  font-size: 0.7rem;
+}
+
+.latest-news .list-news .card-news:nth-child(n + 2) {
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.latest-news .list-news .card-news .date {
+  color: rgba(128, 128, 128, 0.9);
+}
+
+.latest-news .list-news .card-news .footer  {
+  margin-top: 0.5rem;
+  color: rgba(128, 128, 128, 0.9);
+}
+
+.btn-news, .btn-standing, .btn-calendar {
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+  text-align: center;
+  padding: 1rem;
+}
+
+.btn-news .more-news, .btn-standing .btn-fullstanding, .btn-calendar .btn-fullcalendar {
+  padding: 0.5rem 0;
+  width: 100%;
+  color: white;
+  text-transform: uppercase;
+  border: 0;
+  background-color: #0c0c0f;
+  border-radius: 0.2rem;
+}
+
+.btn-news .more-news:hover, .btn-standing .btn-fullstanding:hover, .btn-calendar .btn-fullcalendar:hover {
+  cursor: pointer;
+  background-color: rgba(12, 12, 15, 0.5);
+}
+
+/**/
+.f1-calendar .title {
+  background-color: #dc0e0e;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.4rem;
+  padding: 0.7rem;
+  font-style: italic;
+  letter-spacing: 0.1rem;
+}
+
+.f1-standings, .f1-calendar {
+  margin-top: 2rem;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-top: 0;
+}
+
+.f1-standings .panel {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  background-color: #26262a;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+  padding: 0.5rem 0;
+  position: relative;
+}
+
+.f1-standings .panel::after {
+  position: absolute;
+  width: 30%;
+  bottom: 0;
+  left: 0;
+  border-right: 2px solid transparent;
+  border-bottom: 5px solid #dc0e0e;
+  padding:0 20px;
+  content: "";
+}
+
+.f1-standings .panel h3:first-child {
+  color: white;
+  width: 50%;
+}
+
+.f1-standings .panel h3:last-child {
+  width: 50%;
+  color: #a8a8aa;
+}
+
+.f1-standings .panel h3:last-child:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.f1-calendar table {
+  border-collapse: collapse;
+}
+
+.f1-calendar thead {
+  font-size: 0.7rem;
+  height: 1.5rem;
+}
+
+.f1-calendar tr {
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.f1-calendar thead tr {
+  border-top: 0;
+}
+
+.f1-calendar th:first-child {
+  width: 70%;
+}
+
+.f1-calendar th:first-child {
+  text-align: start;
+  padding-left: 1rem;
+}
+
+.f1-calendar th:last-child {
+  text-align: end;
+  padding-right: 1rem;
+}
+
+.f1-calendar tbody tr td div:first-child {
+  /* background-color: antiquewhite; */
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.7rem;
+}
+
+.f1-calendar tbody tr td div:first-child img {
+  height: 16px;
+  border-radius: 3px;
+  margin-right: 0.4rem;
+}
+
+.f1-calendar tbody tr td div:first-child p:last-child {
+  color: rgba(128, 128, 128, 0.5);
+  font-size: 0.5rem;
+}
+
+.f1-calendar tbody tr td:last-child {
+  /* background-color: aqua; */
+  text-align: end;
+  padding-right: 1rem;
+  font-size: 0.7rem;
+}
+
+.f1-standings table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.f1-standings thead {
+  font-size: 0.7rem;
+  height: 1.5rem;
+}
+
+.f1-standings tbody {
+  font-size: 0.7rem;
+}
+
+.f1-standings tr {
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.f1-standings tbody td {
+  padding: 0.5rem;
 }
