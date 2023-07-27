@@ -4,8 +4,8 @@ Clone racingnews365
 
 ## Responsive
 - [x] Desktop Device
-- [] Tablet Device
-- [] Mobile Device
+- [ ] Tablet Device
+- [x] Mobile Device (480px Only)
 
 ## Preview
 
