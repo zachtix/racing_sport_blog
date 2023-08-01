@@ -848,6 +848,10 @@ footer {
     max-width: 480px;
     overflow: hidden;
   }
+
+  .nav__right, .mainnav__item:nth-child(n+6) {
+    display: none;
+  }
   
   .warpper__grid {
     max-width: 480px;
