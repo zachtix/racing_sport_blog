@@ -2,11 +2,6 @@
 
 Clone racingnews365
 
-## Responsive
-- [x] Desktop Device
-- [ ] Tablet Device
-- [ ] Mobile Device
-
 ## Preview
 
 Preview [Racing Blog](https://64b3fc602922993cdb0679f9--benevolent-mochi-bc45c5.netlify.app/)
